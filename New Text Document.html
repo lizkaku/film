@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" href="icon/icon.svg" />
+      <title>ფილმების ძებნის ფორმა</title>
+    </head>
+    <body>
+        <h1>ფილმების ძებნის ფორმა</h1>
+        <form action="https://ge.movie/filter-movies">
+            <label>რა გსურთ ეძებოთ:</label> <br/>
+              <select name="type">
+                <option name="type" value="movie" >ფილმი</option>
+                <option name="type" value="serial" >სერიალი</option>
+                <option name="type" value="trailer" >თრეილერი</option>
+              </select> <br/><br/>
+              <label>ჟანრები:</label> <br/>
+              <select name="genres%5B%5D">
+                <option name="genres%5B%5D" value="animatsiuri">ანიმაციური </option>
+                <option name="genres%5B%5D" value="dokumenturi">დოკუმენტური</option>
+              </select> <br/>
+              <label>ენა:</label> <br/>
+              <select name="languages">
+                <option name="languages" value="ka">ქართული</option>
+                <option name="languages" value="en">ინგლისური</option>
+              </select> <br/><br/>
+             <label>ქვეყნები:</label> <br/>
+             <select name="countries"><br/>
+                <option>არჩევა..</option>
+                <option name="countries" value="ge">საქართველო</option>
+                <option name="countries" value="us">აშშ</option>
+                <option name="countries" value="fr">საფრანგეთი</option>
+             </select>
+        </form> <br/>
+        <label for="smth">IMDb რეიტინგი: 1-10</label><br/>
+        <input type="" name="" id="smth"> <br/><br/>
+        <label>გამოსვლის წელი: 1920-2024</label><br/>
+        <input type="number">
+        <input type="number">
+        <br/><br/>
+        <input type="submit" value="ძებნა">
+    </body>
+</html>
